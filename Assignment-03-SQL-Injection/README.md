@@ -1,162 +1,79 @@
-\# Assignment 3: SQL Injection \& Authentication Bypass
-
-
+# Assignment 3: SQL Injection & Authentication Bypass
 
 Category: Web Application Security  
-
-Status: ✅ Completed  
-
+Status: Completed  
 Date: October 2025
 
+________________________________________________________________________________
 
-
----
-
-
-
-\## Challenge Overview
-
-
+CHALLENGE OVERVIEW
 
 Exploited SQL injection vulnerability in banking web application to bypass authentication and extract sensitive customer data including credit card information and account details.
 
-
-
-Target: "Safest Bank" online banking application  
-
+Target: Safest Bank online banking application  
 Goal: Bypass authentication and retrieve database records
 
+________________________________________________________________________________
 
+VULNERABILITIES EXPLOITED
 
----
+• SQL Injection in login form authentication
+• Insufficient input validation and sanitization
+• Direct SQL query construction from user input
+• Database error message disclosure
+• Improper access control on sensitive data
 
+________________________________________________________________________________
 
+TOOLS & TECHNIQUES
 
-\## Vulnerabilities Exploited
+• Browser Developer Tools for HTML source analysis
+• SQL Injection payloads for authentication bypass
+• Manual testing with iterative query refinement
+• UNION-based injection for database enumeration
 
+________________________________________________________________________________
 
+ATTACK METHODOLOGY
 
-\- SQL Injection in login form authentication
+Step 1: Analyzed HTML source code for form parameters
+Step 2: Tested input fields for SQL injection vulnerabilities
+Step 3: Triggered SQL error messages to gather database info
+Step 4: Crafted injection payloads to bypass authentication
+Step 5: Used UNION queries to extract database data
+Step 6: Enumerated database structure
+Step 7: Retrieved sensitive customer information
 
-\- Insufficient input validation and sanitization
+________________________________________________________________________________
 
-\- Direct SQL query construction from user input
+KEY LEARNINGS
 
-\- Database error message disclosure
+• SQL injection occurs when user input directly embedded in queries
+• Error messages reveal critical database structure information
+• Authentication vulnerable when relying solely on SQL queries
+• UNION-based injection enables extraction of arbitrary data
+• Input validation must occur server-side
 
-\- Improper access control on sensitive data
+________________________________________________________________________________
 
+DEFENSIVE MEASURES
 
+• Use parameterized queries (prepared statements)
+• Implement input validation and sanitization
+• Apply principle of least privilege for database accounts
+• Disable detailed error messages in production
+• Use ORM frameworks to abstract SQL operations
+• Implement Web Application Firewall (WAF)
+• Regular security testing and code reviews
 
----
+________________________________________________________________________________
 
-
-
-\## Tools \& Techniques
-
-
-
-\- Browser Developer Tools - HTML source analysis and request manipulation
-
-\- SQL Injection payloads - Authentication bypass and data extraction
-
-\- Manual testing - Iterative query refinement based on error messages
-
-\- UNION-based injection - Database schema enumeration
-
-
-
----
-
-
-
-\## Attack Methodology
-
-
-
-1\. Analyzed HTML source code for form submission parameters
-
-2\. Tested input fields for SQL injection vulnerabilities
-
-3\. Triggered SQL error messages to gather database information
-
-4\. Crafted injection payloads to bypass authentication logic
-
-5\. Used UNION queries to extract data from database tables
-
-6\. Enumerated database structure (table names, column names)
-
-7\. Retrieved sensitive customer information systematically
-
-
-
-!\[SQL Injection Attack](screenshots/sql-injection-demo.png)
-
-
-
----
-
-
-
-\## Key Learnings
-
-
-
-\- SQL injection occurs when user input is directly embedded in SQL queries
-
-\- Error messages can reveal critical database structure information
-
-\- Authentication logic vulnerable when relying solely on SQL queries
-
-\- UNION-based injection enables extraction of arbitrary data
-
-\- Input validation must occur on server-side, not just client-side
-
-
-
----
-
-
-
-\## Defensive Measures
-
-
-
-\- Use parameterized queries (prepared statements)
-
-\- Implement input validation and sanitization
-
-\- Apply principle of least privilege for database accounts
-
-\- Disable detailed error messages in production
-
-\- Use ORM frameworks to abstract SQL operations
-
-\- Implement Web Application Firewall (WAF)
-
-\- Regular security testing and code reviews
-
-
-
----
-
-
-
-\## Results
-
-
+RESULTS
 
 Questions Answered: 5/5  
+Data Extracted: Customer names, credit card numbers, balances  
+Time: 4 hours
 
-Data Extracted: Customer names, credit card numbers, account balances  
+________________________________________________________________________________
 
-Time: ~4 hours
-
-
-
----
-
-
-
-\[Back to Course Overview](../README.md)
-
+Back to Course Overview: ../README.md
