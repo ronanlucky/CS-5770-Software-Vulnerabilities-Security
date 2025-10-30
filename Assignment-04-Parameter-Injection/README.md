@@ -1,4 +1,4 @@
-\# Assignment 4: Command Parameter Injection
+Assignment 4: Command Parameter Injection
 
 
 
@@ -36,15 +36,15 @@ VULNERABILITIES EXPLOITED
 
 
 
-• Command injection through grep utility parameters
+\- Command injection through grep utility parameters
 
-• Insufficient input sanitization and filtering
+\- Insufficient input sanitization and filtering
 
-• Client-side validation bypass
+\- Client-side validation bypass
 
-• Improper access control on system files
+\- Improper access control on system files
 
-• Weak command execution safeguards
+\- Weak command execution safeguards
 
 
 
@@ -56,13 +56,13 @@ TOOLS \& TECHNIQUES
 
 
 
-• Browser Developer Tools for HTML source analysis
+\- Browser Developer Tools for HTML source analysis
 
-• Command injection payloads for arbitrary command execution
+\- Command injection payloads for arbitrary command execution
 
-• Unix/Linux command chaining techniques
+\- Unix/Linux command chaining techniques
 
-• File system traversal for locating sensitive data
+\- File system traversal for locating sensitive data
 
 
 
@@ -90,10 +90,6 @@ Step 7: Extracted sensitive data including SSH keys and emails
 
 
 
-!\[Parameter Injection Demo](screenshots/parameter-injection-demo.png)
-
-
-
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 
@@ -102,15 +98,15 @@ KEY LEARNINGS
 
 
 
-• Command injection occurs when user input passed to system calls
+\- Command injection occurs when user input passed to system calls
 
-• Client-side validation provides no security protection
+\- Client-side validation provides no security protection
 
-• Shell metacharacters enable command chaining and execution
+\- Shell metacharacters enable command chaining and execution
 
-• Web applications should never directly invoke system commands
+\- Web applications should never directly invoke system commands
 
-• Principle of least privilege critical for web server processes
+\- Principle of least privilege critical for web server processes
 
 
 
@@ -122,19 +118,19 @@ DEFENSIVE MEASURES
 
 
 
-• Avoid system command calls in web applications entirely
+\- Avoid system command calls in web applications entirely
 
-• Use language-specific functions instead of shell commands
+\- Use language-specific functions instead of shell commands
 
-• Implement strict server-side input validation
+\- Implement strict server-side input validation
 
-• Apply whitelist filtering for allowed characters
+\- Apply whitelist filtering for allowed characters
 
-• Run web applications with minimal privileges
+\- Run web applications with minimal privileges
 
-• Disable dangerous functions in production
+\- Disable dangerous functions in production
 
-• Regular penetration testing and security audits
+\- Regular penetration testing and security audits
 
 
 
@@ -158,5 +154,5 @@ Time: 5 hours
 
 
 
-Back to Course Overview: ../README.md
+Back to Course Overview: README.md
 
