@@ -44,6 +44,8 @@ Step 5: Used UNION queries to extract database data
 Step 6: Enumerated database structure
 Step 7: Retrieved sensitive customer information
 
+![SQL Injection Demo](screenshots/sql-injection-demo.png)
+
 ________________________________________________________________________________
 
 KEY LEARNINGS
