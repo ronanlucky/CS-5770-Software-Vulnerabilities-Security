@@ -2,11 +2,11 @@
 
 
 
-\*\*Category:\*\* Web Application Security  
+Category: Web Application Security  
 
-\*\*Status:\*\* Completed  
+Status: Completed  
 
-\*\*Date:\*\* October 2025
+Date: October 2025
 
 
 
@@ -22,9 +22,9 @@ Exploited command parameter injection vulnerability in Safest Bank's online tele
 
 
 
-\*\*Target:\*\* Safest Bank phone directory web application  
+Target: Safest Bank phone directory web application  
 
-\*\*Goal:\*\* Extract sensitive system files and information
+Goal: Extract sensitive system files and information
 
 
 
@@ -146,11 +146,11 @@ Exploited command parameter injection vulnerability in Safest Bank's online tele
 
 
 
-\*\*Questions Answered:\*\* 6/6  
+Questions Answered: 6/6  
 
-\*\*Data Extracted:\*\* CPU info, emails, SSH keys, secret files  
+Data Extracted: CPU info, emails, SSH keys, secret files  
 
-\*\*Time:\*\* 5 hours
+Time: 5 hours
 
 
 
