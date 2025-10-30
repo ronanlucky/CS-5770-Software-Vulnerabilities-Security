@@ -1,20 +1,20 @@
-Assignment 4: Command Parameter Injection
+\# Assignment 4: Command Parameter Injection
 
 
 
-Category: Web Application Security  
+\*\*Category:\*\* Web Application Security  
 
-Status: Completed  
+\*\*Status:\*\* Completed  
 
-Date: October 2025
-
-
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\*\*Date:\*\* October 2025
 
 
 
-CHALLENGE OVERVIEW
+---
+
+
+
+\## Challenge Overview
 
 
 
@@ -22,17 +22,17 @@ Exploited command parameter injection vulnerability in Safest Bank's online tele
 
 
 
-Target: Safest Bank phone directory web application  
+\*\*Target:\*\* Safest Bank phone directory web application  
 
-Goal: Extract sensitive system files and information
-
-
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\*\*Goal:\*\* Extract sensitive system files and information
 
 
 
-VULNERABILITIES EXPLOITED
+---
+
+
+
+\## Vulnerabilities Exploited
 
 
 
@@ -48,11 +48,11 @@ VULNERABILITIES EXPLOITED
 
 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+---
 
 
 
-TOOLS \& TECHNIQUES
+\## Tools \& Techniques
 
 
 
@@ -66,35 +66,39 @@ TOOLS \& TECHNIQUES
 
 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+---
 
 
 
-ATTACK METHODOLOGY
+\## Attack Methodology
 
 
 
-Step 1: Analyzed HTML source to understand grep command usage
+1\. Analyzed HTML source to understand grep command usage
 
-Step 2: Tested input fields for command injection points
+2\. Tested input fields for command injection points
 
-Step 3: Bypassed client-side input filtering
+3\. Bypassed client-side input filtering
 
-Step 4: Crafted payloads using command separators and operators
+4\. Crafted payloads using command separators and operators
 
-Step 5: Executed arbitrary commands to enumerate system information
+5\. Executed arbitrary commands to enumerate system information
 
-Step 6: Navigated filesystem to locate target files
+6\. Navigated filesystem to locate target files
 
-Step 7: Extracted sensitive data including SSH keys and emails
-
-
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+7\. Extracted sensitive data including SSH keys and emails
 
 
 
-KEY LEARNINGS
+!\[Parameter Injection Demo](screenshots/parameter-injection-demo.png)
+
+
+
+---
+
+
+
+\## Key Learnings
 
 
 
@@ -110,11 +114,11 @@ KEY LEARNINGS
 
 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+---
 
 
 
-DEFENSIVE MEASURES
+\## Defensive Measures
 
 
 
@@ -134,25 +138,25 @@ DEFENSIVE MEASURES
 
 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+---
 
 
 
-RESULTS
+\## Results
 
 
 
-Questions Answered: 6/6  
+\*\*Questions Answered:\*\* 6/6  
 
-Data Extracted: CPU info, emails, SSH keys, secret files  
+\*\*Data Extracted:\*\* CPU info, emails, SSH keys, secret files  
 
-Time: 5 hours
-
-
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\*\*Time:\*\* 5 hours
 
 
 
-Back to Course Overview: README.md
+---
+
+
+
+\[Back to Course Overview](../README.md)
 
